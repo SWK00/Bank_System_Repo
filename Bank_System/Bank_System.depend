@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1739409128 source:c:\users\shehab\desktop\bank_system_repo\bank_system\main.cpp
+	<iostream>
+	<string>
+	"Validation.h"
+	"Person.h"
+	"Client.h"
+	"Employee.h"
+	"Admin.h"
+
+1739409053 c:\users\shehab\desktop\bank_system_repo\bank_system\include\validation.h
+	<iostream>
+	<string>
+
+1739405660 c:\users\shehab\desktop\bank_system_repo\bank_system\include\person.h
+	<iostream>
+	<string>
+
+1739409230 c:\users\shehab\desktop\bank_system_repo\bank_system\include\client.h
+	"Person.h"
+
+1739409230 c:\users\shehab\desktop\bank_system_repo\bank_system\include\employee.h
+	"Person.h"
+
+1739405531 c:\users\shehab\desktop\bank_system_repo\bank_system\include\admin.h
+	"Employee.h"
+
