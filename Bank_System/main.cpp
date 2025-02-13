@@ -13,9 +13,5 @@ int main()
     cout << "Hello world!" << endl;
     cout << "Welcome to project\n" ;
 
-    Admin c (5,"shehab",10,"male","05585569",00) ;
-
-    c.display () ;
-
     return 0;
 }
