@@ -41,11 +41,18 @@ public :
     // Methods :
     void deposit (double amount)
     {
-        this->balance += amount ;
+        if (amount > 0)
+        {
+            this->balance += amount ;
+        }
+        else
+        {
+            cout << "Sorry , This amount is less than zero ." << endl ;
+        }
     }
     void withdraw (double amount)
     {
-        if (amount <= balance)
+        if (amount <= balance && amount > 0)
         {
             this->balance -= amount ;
         }
@@ -56,7 +63,11 @@ public :
     }
     void transferTo (double amount ,Client &recipient)
     {
-        if (amount <= balance)
+        /*
+        withdraw (amount) ;
+        recipient.deposit (amount) ;
+        */
+        if (amount <= balance && amount > 0)
         {
             this->balance -= amount ;
             recipient.deposit (amount) ;
@@ -66,12 +77,10 @@ public :
             cout << "Sorry , This amount is bigger than your balance ." << endl ;
         }
     }
-    /*
     void checkBalance ()
     {
-
+        cout << "Balance is   : " << this->balance << endl ;
     }
-    */
     void display ()
     {
         Person::display() ;

@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include "Validation.h"
 using namespace std ;
 
 class Person
@@ -17,6 +18,9 @@ public :
     {
         this->id = 0 ;
         this->age = 0 ;
+        this->name = "" ;
+        this->gender = "" ;
+        this->password = "" ;
     }
     // Parameterized Constructor :
     Person (int id , string name , int  age , string gender , string password)
