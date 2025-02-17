@@ -24,4 +24,6 @@ public :
     }
 };
 
+static vector<Admin> allAdmins ;
+
 #endif // ADMIN_H

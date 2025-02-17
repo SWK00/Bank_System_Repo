@@ -51,4 +51,6 @@ public :
     }
 };
 
+static vector<Employee> allEmployees ;
+
 #endif // EMPLOYEE_H

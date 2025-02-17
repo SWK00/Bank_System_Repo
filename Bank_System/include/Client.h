@@ -93,4 +93,6 @@ public :
     }
 };
 
+static vector<Client> allClients ;
+
 #endif // CLIENT_H
