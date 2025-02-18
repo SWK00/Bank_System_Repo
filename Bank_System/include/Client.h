@@ -85,6 +85,7 @@ public :
     {
         Person::display() ;
         cout << "Balance is   : " << this->balance << endl ;
+        cout << "===========================" << endl ;
     }
     // Destructor :
     ~Client ()
@@ -94,5 +95,6 @@ public :
 };
 
 static vector<Client> allClients ;
+static vector<Client>::iterator client_It ;
 
 #endif // CLIENT_H

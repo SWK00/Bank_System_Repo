@@ -6,7 +6,7 @@
 
 class FileManager : public DataSource
 {
-public:
+private :
     static void addClient (Client c)
     {
         FilesHelper::saveClient(c);
@@ -33,7 +33,6 @@ public:
     }
     static void removeAllClients()
     {
-        int id = FileHelper::getLast("Client.txt");
         FilesHelper::clearFile("Client.txt","ClientLastID.txt");
     }
     static void removeAllEmployees()
@@ -44,11 +43,36 @@ public:
     {
         FilesHelper::clearFile("Admin.txt","AdminLastID.txt");
     }
+public :
     static void allData ()
     {
         getAllClients();
         getAllEmployees();
         getAllAdmins();
+    }
+    static void updateClientFile ()
+    {
+        removeAllClients();
+        for (client_It=allClients.begin() ; client_It != allClients.begin() ; client_It++ )
+        {
+            addClient(*client_It) ;
+        }
+    }
+    static void updateEmployeeFile ()
+    {
+        removeAllEmployees();
+        for (employee_It=allEmployees.begin() ; employee_It != allEmployees.begin() ; employee_It++ )
+        {
+            addEmployee(*employee_It) ;
+        }
+    }
+    static void updateAdminFile ()
+    {
+        removeAllAdmins();
+        for (admins_It=allAdmins.begin() ; admins_It != allAdmins.begin() ; admins_It++ )
+        {
+            addAdmin(*admins_It) ;
+        }
     }
 };
 

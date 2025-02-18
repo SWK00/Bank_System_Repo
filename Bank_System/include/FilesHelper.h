@@ -1,14 +1,7 @@
 #ifndef FILESHELPER_H
 #define FILESHELPER_H
 
-#include <iostream>
-#include <string>
-#include <fstream>
-#include <vector>
-#include "Client.h"
-#include "Admin.h"
 #include "Parser.h"
-using namespace std ;
 
 class FilesHelper
 {

@@ -1,27 +1,48 @@
 # depslib dependency file v1.0
-1739409128 source:c:\users\shehab\desktop\bank_system_repo\bank_system\main.cpp
+1739915174 source:c:\users\shehab\desktop\bank_system_repo\bank_system\main.cpp
 	<iostream>
-	<string>
-	"Validation.h"
-	"Person.h"
-	"Client.h"
-	"Employee.h"
 	"Admin.h"
+	"CreatFile.h"
+	"FilesHelper.h"
+	"DataSource.h"
+	"parser.h"
 
 1739409053 c:\users\shehab\desktop\bank_system_repo\bank_system\include\validation.h
 	<iostream>
 	<string>
 
-1739405660 c:\users\shehab\desktop\bank_system_repo\bank_system\include\person.h
+1739913586 c:\users\shehab\desktop\bank_system_repo\bank_system\include\person.h
+	<vector>
+	"Validation.h"
+
+1739912632 c:\users\shehab\desktop\bank_system_repo\bank_system\include\client.h
+	"Person.h"
+
+1739913624 c:\users\shehab\desktop\bank_system_repo\bank_system\include\employee.h
+	"Client.h"
+
+1739913543 c:\users\shehab\desktop\bank_system_repo\bank_system\include\admin.h
+	"Employee.h"
+
+1739914259 c:\users\shehab\desktop\bank_system_repo\bank_system\include\filemanager.h
+	"DataSource.h"
+	"FilesHelper.h"
+	"Client.h"
+	"Admin.h"
+
+1739915032 c:\users\shehab\desktop\bank_system_repo\bank_system\include\datasource.h
+	"Admin.h"
+
+1739913706 c:\users\shehab\desktop\bank_system_repo\bank_system\include\fileshelper.h
+	"Parser.h"
+
+1739913950 c:\users\shehab\desktop\bank_system_repo\bank_system\include\parser.h
+	<sstream>
+	<fstream>
+	"Admin.h"
+
+1739825269 c:\users\shehab\desktop\bank_system_repo\bank_system\include\creatfile.h
 	<iostream>
 	<string>
-
-1739409230 c:\users\shehab\desktop\bank_system_repo\bank_system\include\client.h
-	"Person.h"
-
-1739409230 c:\users\shehab\desktop\bank_system_repo\bank_system\include\employee.h
-	"Person.h"
-
-1739405531 c:\users\shehab\desktop\bank_system_repo\bank_system\include\admin.h
-	"Employee.h"
+	<fstream>
 

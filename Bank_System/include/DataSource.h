@@ -1,13 +1,14 @@
 #ifndef DATASOURCE_H
 #define DATASOURCE_H
 
+#include"Admin.h"
 
 class DataSource
 {
 public:
-    virtual void addClient(Client) = 0 ;
-    virtual void addEmployee(Employee) = 0 ;
-    virtual void addAdmin(Admin) = 0 ;
+    virtual void addClient(Client c) = 0 ;
+    virtual void addEmployee(Employee e) = 0 ;
+    virtual void addAdmin(Admin a) = 0 ;
     virtual void getAllClients() = 0 ;
     virtual void getAllEmployees() = 0 ;
     virtual void getAllAdmins() = 0 ;
